@@ -8,4 +8,4 @@ install:
   - pip install
 # command to run tests
 script:
-  - pipenv run python main.py 
+  - pipenv run pylint *.py 
