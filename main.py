@@ -1,18 +1,15 @@
-# Ecrire en python  le code (en utilisant flask) permettant 
-# d'ecouter sur le port 5000 et de répondre "Hello world"
-# quand l'utilisateur se connecte dessus
-
+#Ecrire en python  le code (en utilisant flask) permettan
+#ecouter sur le port 5000 et de répondre "Hello world"
+#quand l'utilisateur se connecte dessus
 #!/usr/bin/python
 # -*- coding: <encoding name> -*-
-
-
-from flask import Flask 
-app = Flask(__name__)
-@app.route("/")
-
+""" fichier main test"""
+from flask import Flask
+APP = Flask(__name__)
+@APP.route("/")
 def hello():
+    """ doc """
     return "Hello"
-
-# LISTEN 
+# LISTEN
 if __name__ == '__main__':
-    app.run(host="0.0.0.0")
+    APP.run(host="0.0.0.0")
